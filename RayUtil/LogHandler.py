@@ -14,6 +14,9 @@ class LogHandler(logging.Logger):
     """
 
     def __init__(self, name, level=logging.DEBUG, stream=True, log_dir=None, file_log_level=logging.DEBUG, backup_days=7):
+        """
+        init a log handler
+        """
         self.name = name
         self.level = level
         logging.Logger.__init__(self, name, level=level)
